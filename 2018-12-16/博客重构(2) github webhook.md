@@ -1,8 +1,10 @@
-<!-- {title:'blog code refactoring github webhook', comment:'true', modify:'2018-12-16'} -->
+<!-- {title_en:'blog code refactoring github webhook', comment:true, modify:'2018-12-16', tags:["博客","架构"]} -->
 
-## github webhook 的安全验证
+# 博客重构(2): github webhook的安全验证
 
-[github的官方文档](https://developer.github.com/webhooks/securing/) webhook 流程是在github中配置回调 url，每次 push 后，github 会向刚刚配置的url发送一个请求。后台接受请求处理部分很简单，但要验证下是否真的是 github 发来的请求，防止被攻击。文档中是用 ruby 来写的，大致是将 payload 按 HMAC-SHA1 算法验证签名，翻译成 java 代码就如下。
+webhook 总体流程是在github中配置回调 url，每次 push，github 会向刚刚配置的url发送一个请求。后台接受请求处理部分很简单，但要验证下是否真的是 github 发来的请求，防止被攻击。
+
+文档中是用 ruby 来写的，大致是将 payload 按 HMAC-SHA1 算法验证签名，翻译成 java 代码就如下所示。
 
 ```java
 @RequestMapping("/callback/github")
@@ -47,3 +49,10 @@ public String github(@RequestBody("payload") String payload,
 ```java
 public static String SECRET_TOKEN = System.getenv("GITHUB_WEBHOOK_TOKEN");
 ```
+
+
+
+## 参考文档
+
+[github webhook 官方文档](https://developer.github.com/webhooks/securing/)
+
