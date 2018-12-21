@@ -1,4 +1,4 @@
-<!-- {title_en:'blog code refactoring use redis to save blog list', comment:true, modify:'2018-12-17', tags:["博客","架构"]} -->
+<!-- {title_en:'blog code refactoring use redis to save blog list', comment:true, modify:'2018-12-17', tags:['博客','架构'], summary:'将 github 上的博客文章下载完成以后，将文件列表遍历以后变为一个列表，需要找地方存一下这个列表，当用户通过浏览器访问网站时，生成一个列表页面。考虑到存到内存里没法很方便的管理，我在这里使用了 redis。'} -->
 
 # 博客重构(4) 使用redis来保存列表信息
 
