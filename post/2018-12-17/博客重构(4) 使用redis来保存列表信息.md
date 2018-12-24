@@ -34,3 +34,44 @@ long end = page * size > total ? total : page * size;
 List<Blog> list = redisTemplate.opsForList().range("Blogs", begin, end);
 ```
 
+
+
+## 错误记录
+
+1、JedisConnectionException: Unexpected end of stream
+
+解决方法：配置了 redis 的连接池后就不再出错，示例如下：
+
+``` java
+@Configuration
+public class RedisConfig {
+
+    @Value("${spring.redis.host}")
+    private String host;
+
+    @Value("${spring.redis.port}")
+    private String port;
+
+    @Value("${spring.redis.poolSize}")
+    private String poolSize;
+
+
+    @Bean
+    public JedisConnectionFactory jedisConnectionFactory() {
+        JedisConnectionFactory jedisConnectionFactory = new JedisConnectionFactory(this.jedisPoolConfig());
+        return jedisConnectionFactory;
+    }
+
+    @Bean
+    public JedisPoolConfig jedisPoolConfig() {
+        JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
+        jedisPoolConfig.setMaxTotal(Integer.parseInt(poolSize));
+        jedisPoolConfig.setMaxIdle(15);
+        jedisPoolConfig.setMinIdle(1);
+        jedisPoolConfig.setMaxWaitMillis(10000);
+        jedisPoolConfig.setTestOnBorrow(true);
+        return jedisPoolConfig;
+    }
+}
+```
+

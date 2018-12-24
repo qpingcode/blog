@@ -1,4 +1,4 @@
-<!-- {title_en:'Docker run nginx in docker', comment:true, modify:'2018-12-20', tags:['docker', '容器'], summary:''} -->
+<!-- {title_en:'Docker run nginx in docker', comment:true, modify:'2018-12-20', tags:['docker', 'container', '容器'], summary:''} -->
 
 # Docker(1) 创建提供web服务的容器
 
@@ -32,7 +32,7 @@ docker 的一些命令介绍：
 
 ### 错误记录
 
-1 运行 `apt-get install nginx` 时，提示 Unable to locate package。
+1、运行 `apt-get install nginx` 时，提示 Unable to locate package。
 
 解决方法：运行 `apt-get update`
 
