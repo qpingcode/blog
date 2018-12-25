@@ -1,6 +1,6 @@
 <!-- {title_en:'blog code refactoring github webhook', comment:true, modify:'2018-12-16', tags:['博客','架构'], summary:'webhook 总体流程是在github中配置回调 url，每次 push，github 会向刚刚配置的url发送一个请求。后台接受请求处理部分很简单，但要验证下是否真的是 github 发来的请求，防止被攻击。'} -->
 
-# 博客重构(2): github webhook的安全验证
+# 博客重构(二): github webhook的安全验证
 
 webhook 总体流程是在github中配置回调 url，每次 push，github 会向刚刚配置的url发送一个请求。后台接受请求处理部分很简单，但要验证下是否真的是 github 发来的请求，防止被攻击。
 

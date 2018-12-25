@@ -1,6 +1,6 @@
 <!-- {title_en:'kubernetes learn install minikube', comment:true, modify:'2018-12-22', tags:['k8s','kubernetes', 'minikube'], summary:''} -->
 
-# kubernetes学习(1) minikube安装
+# kubernetes学习(一) minikube安装
 
 kubernetes 的安装部署很复杂，构建一个集群的话至少需要三台服务器，为了便于新手学习，所以 kubernetes 提供了 minikube 用于学习和试验。
 
