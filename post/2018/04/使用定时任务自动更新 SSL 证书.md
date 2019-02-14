@@ -19,7 +19,7 @@ tags:
 1. 删除定时任务：crontab -r
 1. 直接编辑当前用户的crontab: crontab -e
 
-![img](28051523754796790.png)
+![img](assets/28051523754796790.png)
 
 # 二、cron表达式
 

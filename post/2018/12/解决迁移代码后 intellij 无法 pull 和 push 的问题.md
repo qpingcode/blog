@@ -82,7 +82,7 @@ Could not read from remote repository
 
 怀疑是 intellij 使用了内嵌的 ssh，和命令行中执行的 ssh 是不一样的。果然有个配置 SSH executable，将 build-in 改为 Native 后。就可以使用 git clone git@github.com:qingcode/test.git 了，也可以 commit 与 push。
 
-![img](16281543835079034.png)
+![img](assets/16281543835079034.png)
 
 
 

@@ -12,8 +12,6 @@ tags:
 
 首先是获取SSL证书，免费的主要有StartSSL和Let's Encrypt，Let's Encrypt由Mozilla、思科、Akamai、IdenTrust和EFF等组织发起，现在已经得到Google、Facebook等大公司的支持和赞助。而StartSSL是一家证书公司，个人还是比较倾向于开源组织，最终选用了Let's Encrypt。
 
-![img](https://blog.qping.me/static/upload/2018/04/19/59551524106965468.png)
-
 # 一、安装配置证书
 
 Let's Encrypt有脚本可以自动化配置，可以自动获取证书、安装证书、修改nginx配置，流程如下：

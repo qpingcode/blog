@@ -1,0 +1,35 @@
+<script src="template.0.2.js"></script>
+<script src="hammer.js"></script>
+<div id="ok"></div>
+<script>
+    var tpl = '<ul>' +
+        '{{each item in $data}}' +
+        '        <li>' +
+        '            <span class="author">{{item.text}}</span>' +
+        '            <span class="post-meta">' +
+        '                 &nbsp;•&nbsp; {{item.remark}} &nbsp;•&nbsp;' +
+        '                <a href="javascript:void(0)" class="reply" onclick="reply({{item.id}})">回复</a>' +
+        '            </span>' +
+        '            <p>{{item.value}}</p>' +
+        '           {{if item.children}}' +
+        '           {{include this item.children}} ' +
+        '           {{/if}} ' +
+        '        </li>' +
+        '{{/each}}' +
+        '</ul>';
+
+        var rows =[
+            {text:"1", remark:"remark1", id:"1", value:"ok"},
+            {text:"4", remark:"remark4", id:"4", value:"ok"},
+            {text:"2", remark:"remark2", id:"2", value:"ok", children:[
+                    {text:"4", remark:"remark4", id:"4", value:"ok"},
+                    {text:"5", remark:"remark5", id:"5", value:"ok2222", children:[
+                            {text:"1111", remark:"remark1", id:"1", value:"ok"}
+                        ]}
+                ]},
+            {text:"3", remark:"remark3", id:"3", value:"ok"}
+        ]
+
+        var html = template(tpl, rows);
+        $("#ok").html(html)
+</script>

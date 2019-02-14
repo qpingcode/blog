@@ -7,18 +7,18 @@ tags:
 
 
 
-我本机跑 SpringBoot 的项目内存刚启动就达到了 420M，阿里云的服务器一共才 1G 的内存，这只能跑2个微服务项目了。每个微服务都很简单，根本不用这么多内存，今天优化下内存使用。
+我本机跑 SpringBoot 的项目内存刚启动就达到了 420M，阿里云的服务器一共才 1G 的内存，这只能跑2个微服务项目了。每个微服务都很简单，根本不用这么多内存，今天尝试减少内存使用。
 
 <!-- more -->
 
 1、tomcat 线程数量优化
 
-Spring boot自带的tomcat线程数默认值为200个，我们没有这么大的并发量，这里修改Spring boot的配置application.properties的内容
+Spring boot自带的tomcat线程数默认值为200个，没有这么大的并发量，这里修改Spring boot的配置application.properties的内容
 
 ``` properties
  server:
- 	tomcat:
- 		max-threads : 10
+   tomcat:
+     max-threads : 10
 ```
 
 2、 JIT 优化关闭
@@ -49,4 +49,4 @@ java -server -Xms512m -Xmx768m -XX:ParallelGCThreads=2 -jar springboot-1.0.jar
 
 5、总结
 
-原本内存占用为 430m，优化后内存为220m，还可以接受。
+原本内存占用为 430m，优化后内存为220m，暂时可以接受。

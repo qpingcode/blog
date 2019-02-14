@@ -12,7 +12,7 @@ kubernetes 的安装部署很复杂，构建一个集群的话至少需要三台
 
 minkube 需要首先安装 virtualBox，可以通过 `brew cask install virtualbox` 安装。安装时会因为安全校验被 MacOS 拦截，提示安装失败。点击 allow 后，再执行一次 brew 安装就可以了。
 
-![security_allow](security_setting_1225.png)
+![security_allow](assets/security_setting_1225.png)
 
 然后下载 minikube 
 

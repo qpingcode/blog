@@ -25,7 +25,7 @@ tags:
 
 最终模样：
 
-![img](63841536096109230.png)
+![img](assets/63841536096109230.png)
 
 
 
@@ -35,7 +35,7 @@ tags:
 
 系统装完后，直接在浏览器输入NAS的IP地址，就可以进入web管理页面，默认登陆用户是admin，密码是openmediavault。长下面这个样子，还是挺漂亮的。
 
-![img](16701536096607030.png)
+![img](assets/16701536096607030.png)
 
 
 
@@ -63,7 +63,7 @@ apt-get install openmediavault-docker-gui
 
 或者在web管理界面，插件中搜索docker-gui安装，安装完毕，右侧会多一个容器。
 
-![img](52831536096931409.png)
+![img](assets/52831536096931409.png)
 
 
 

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color: #363636;
+	color:white;
+}
+
+a{
+    color:#fff;
+}
+.header{
+    box-shadow: none;
+    background-color: #363636;
+}
+
+.header ul{
+    border-bottom: solid 1px #999
+}
+
+.menubar .menuitem a{
+    color:#ccc;
+}
+
+.menubar .menuitem.active a{
+	color:white;
+}
+
+article{
+	border-bottom: 1px solid #555;
+}
+
+article .blog-title a{
+	color:white;
+}
+
+.main .middle{
+	background-color: #363636;
+    box-shadow: none;
+}
+
+.toolbox{
+	box-shadow: none;
+	border: solid 1px #888;
+	background-color: #888;
+}
+
+.toolbox .tool{
+	/*background-color: #888;*/
+	border-bottom:1px solid #444;
+}
+
+.toolbox li:last-child{
+	border-bottom:none;
+}
+
+.toolbox .tool a{
+	color:#363636;
+}
+
+#lightBtn a:before{
+	content: "\e866";
+}
+
+#upBtn a:before{
+	/*content: "\e84c";*/
+	 content: "\e86d";
+}
+
+.page ul li{
+    color: #eee;
+}
+
+.page .btn-prev i,.page .btn-next i{
+    color:white;
+}
+
+.page .page-total{
+	color:#eee;
+}
+
+.page .page-editor .input-inner{
+    color: #eee;
+}
+
+.qp-input-inner:focus,.qp-textarea-inner:focus{
+	color:white;
+    border: 1px solid #409EFF;
+}
+
+.comment-area li a{
+	color:#aaa;
+}
+
+.blue-tag {
+    background-color: #444;
+	border: 1px solid #dcdfe6;
+    color: white;
+}
+
+.qp-button{
+    background: #444;
+    border: 1px solid #dcdfe6;
+    color: #eee;
+}
+
+.markdown-body table tr {
+    background-color: #444;
+    border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+    background-color: #666;
+}
