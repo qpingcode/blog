@@ -85,7 +85,7 @@
 	{{each blog in $data}}
 		<article>
 			<div class="blog-title">
-				<a href="{{blog.path}}{{blog.key}}.html"> {{blog.titleCn}}</a>
+				<a href="{{blog.path}}{{blog.key}}.html" target="_blank"> {{blog.titleCn}}</a>
 			</div>
 			<div class="blog-meta">
 				<i class="iconfont icon-time-circle"></i> {{blog.modify? blog.modify.substring(0,10): "前些时候"}}

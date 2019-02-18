@@ -15,6 +15,8 @@ tags:
 docker run -d -p 5000:5000 --restart=always --name registry -v /opt/data/registry:/var/lib/registry registry 
 ```
 
+
+
 # 使用
 
 上传镜像
@@ -44,7 +46,7 @@ curl docker.qping.me:5000/v2/blog/tags/list
 docker pull docker.qping.me:5000/blog:v2.1
 ```
 
-因为 docker 默认不允许非 https 推送镜像，我们可以通过 Docker 的配置选项来取消这个限制。在 ubuntu 16 中，在 `/etc/docker/daemon.json` 中写入如下内容：
+因为 docker 默认不允许非 https 推送镜像，我们可以通过 Docker 的配置选项来取消这个限制。在 ubuntu 16 中，在 `/etc/docker/daemon.json` 中写入如下内容 ：
 
 ```json
 {
@@ -57,7 +59,7 @@ docker pull docker.qping.me:5000/blog:v2.1
 }
 ```
 
-
+（这个是在客户端修改的，不是registry那台服务器需要修改，mac版本可以在 preference > daemon > Insecure registries 增加 docker.qping.me:5000）
 
 # 参考
 
