@@ -8,7 +8,7 @@
     var pn = $.getUrlParams()["pn"] ? parseInt($.getUrlParams()["pn"]) : 1;
     function loadList(){
         $.ajax({
-            url: "http://blog.qping.me:8888/api/blog",
+            url: "https://blog.qping.me:8888/api/blog",
             data: "page=" + (pn || 1) + "&size=" + pageSize,
             dataType: 'json',
             success: function (result) {
