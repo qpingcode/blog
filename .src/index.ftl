@@ -105,4 +105,16 @@
     <script type="text/javascript" src="/js/blog/index.js"></script>
 	<script type="text/javascript" src="/theme/default/theme.js"></script>
     <script type="text/javascript" src="/js/plugin-manager.js"></script>
+
+    <!-- baidu tongji begin -->
+    <script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?82a3f5f2414f405a74bcf8584b54c933";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+	<!-- baidu tongji end -->
 </html>
