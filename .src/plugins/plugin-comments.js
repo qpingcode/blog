@@ -77,7 +77,7 @@
             var content = $("#content").val();
 
             $.ajax({
-                url: "http://blog.qping.me:8888/api/blog/" + params.articleId + "/comment",
+                url: "/api/blog/" + params.articleId + "/comment",
                 method:"put",
                 dataType:"json",
                 data:{
