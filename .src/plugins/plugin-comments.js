@@ -111,7 +111,7 @@
 		},
 		call(dom, params, domId){
             $.ajax({
-                url: "http://blog.qping.me:8888/api/blog/" + params.articleId + "/comment",
+                url: "/api/blog/" + params.articleId + "/comment",
                 dataType: 'json',
                 success: function (result) {
                     console.log(result)
