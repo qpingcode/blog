@@ -12,10 +12,12 @@
 			var leftEye = document.createElement("img")
 			leftEye.src =  pluginPath + "owl/owl_eye.png"
 			leftEye.style.boxShadow = "none"
+			leftEye.style.position = "absolute"
 
 			var rightEye = document.createElement("img")
 			rightEye.src =  pluginPath + "owl/owl_eye.png"
 			rightEye.style.boxShadow = "none"
+			rightEye.style.position = "absolute"
 
 			dom.appendChild(owlBody)
 			dom.appendChild(leftEye)
