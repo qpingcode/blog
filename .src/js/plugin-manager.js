@@ -94,7 +94,7 @@ function PluginManager(){
                 var params = $.extend(true, {}, plugin.default, eval("(" + params_str + ")"));
 
                 function load(){
-                    plugin.call(v, params, domId);
+                    plugin.call(v, params, domId, relativePath);
                 }
 
                 if(domId){
