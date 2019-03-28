@@ -5,6 +5,10 @@ tags:
  - gis
 ---
 
+QGIS可以使用 Shapefile、Coverage 和 Personal Geodatabase 格式的数据。它也支持 MapInfo、PostGIS 和许多其他格式。QGIS也支持包括 Web 地图服务及 Web 特性服务的 Web 服务，以此来使用外部来源的数据。
+
+<!-- more -->
+
 1、 安装报错，需要python3
 
 https://www.python.org/downloads/mac-osx/
