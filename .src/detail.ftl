@@ -26,7 +26,7 @@
 
 							<#if blog.defaultLayout>
 							<div class="blog-title">
-								<a href="t_detail.html"> ${blog.titleCn} </a>
+								<a href="javascript:void(0)"> ${blog.titleCn} </a>
 							</div>
 							<div class="blog-meta">
 								<i class="iconfont icon-time-circle"></i> ${blog.modify}
