@@ -4,7 +4,7 @@
 	pluginManager.register("plugin-owl", {
 		default:{
 		},
-		call(dom, params, pluginPath){
+		call(dom, params, domId, pluginPath){
 			
 			var owlBody = document.createElement("img")
 			owlBody.src = pluginPath + "owl/owl_bottom.png"
