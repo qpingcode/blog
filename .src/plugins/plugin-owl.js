@@ -11,11 +11,11 @@
 
 			var leftEye = document.createElement("img")
 			leftEye.src =  pluginPath + "owl/owl_eye.png"
-			leftEye.style.box-shadow = "none"
+			leftEye.style.boxShadow = "none"
 
 			var rightEye = document.createElement("img")
 			rightEye.src =  pluginPath + "owl/owl_eye.png"
-			rightEye.style.box-shadow = "none"
+			rightEye.style.boxShadow = "none"
 
 			dom.appendChild(owlBody)
 			dom.appendChild(leftEye)
