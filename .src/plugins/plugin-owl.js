@@ -37,7 +37,7 @@
 			console.log(owlBody.offsetTop, owlBody.offsetLeft)
 
 			document.addEventListener ('mousemove', function mouseMove(event){
-				mouse =  returngetMousePos(event)
+				mouse =  getMousePos(event)
 			}, false);
 
 			// 50毫秒刷新一次眼睛的位置，解决卡顿
