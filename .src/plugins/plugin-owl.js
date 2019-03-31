@@ -26,11 +26,13 @@
 			var r1 = 14; 	// 眼眶半径 / 2
 			var r2 = 14;	// 眼睛半径
 
-			var left_x0 = owlBody.offsetLeft + 96;
-			var left_y0 = owlBody.offsetTop + 96;
+			var offset = getOffset(owlBody)
 
-			var right_x0 = owlBody.offsetLeft + 168;
-			var right_y0 = owlBody.offsetTop + 96;
+			var left_x0 = offset.left + 96;
+			var left_y0 = offset.top + 96;
+
+			var right_x0 = offset.left + 168;
+			var right_y0 = offset.top + 96;
 
 			var mouse = [0, 0]
 			
@@ -76,6 +78,14 @@
 				return [x4, y4]
 			}
 
+			function getOffset(elem){
+				var rect = elem.getBoundingClientRect();
+				var win = elem.ownerDocument.defaultView;
+				return {
+					top: rect.top + win.pageYOffset,
+					left: rect.left + win.pageXOffset
+				}
+			}
 			function getMousePos(event) {
 	            var e = event || window.event;
 	            var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft;
