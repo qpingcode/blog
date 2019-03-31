@@ -16,18 +16,7 @@ tags:
 
 # Algorithm
 
-[238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)：Given an array nums of n integers where n > 1,  return an array output such that output[i] is equal to the product of all the elements of nums except nums[i]
-
-**Example:**
-
-```
-Input:  [1,2,3,4]
-Output: [24,12,8,6]
-```
-
-**Note:** Please solve it **without division** and in O(*n*).
-
-题目很简单，给定一个数组 A，例如 [1,2,3,4]，求一个返回数组 B，B[i] 等于A中所有元素的乘积 ( 除了A[i] )。但是限定了算法复杂度是 O(n)，所以不能用两层循环嵌套。也限定了不能用除法，不能将A所有元素相乘，再循环除 A[i]，得出结果。
+[求数组中的元素除了自身的乘积](https://leetcode.com/problems/product-of-array-except-self)：给定一个数组 A，例如 [1,2,3,4]，求一个返回数组 B，B[i] 等于A中所有元素的乘积 ( 除了A[i] )。但是限定了算法复杂度是 O(n)，所以不能用两层循环嵌套。也限定了不能用除法，不能将A所有元素相乘，再循环除 A[i]，得出结果。
 
 最后的解题思路是从左到右挨个求出一个数组，再从右到左求出一个数组，每一项的值都是之前所有值的乘积，B[i] = left[i - 1] * right[i -1]。
 
@@ -54,6 +43,8 @@ class Solution {
 }
 ```
 
+
+
 # Review
 
 英文文章挑了一篇阮一峰的每周分享，是一篇介绍 python 的数学计算库 : [numpy](https://www.pythonprogramming.in/numpy-tutorial-with-examples-and-solutions.html) 。
@@ -63,6 +54,8 @@ NumPy 是一个开源的 python 工具库，它能够操作多维数组，提供
 文章介绍了 Numpy 创建数组、重新改变数组形状、随机生成数组、下标访问多维数组、多维数组的分割与合并、线性代数计算。
 
 简而言之，对于 numpy 是一个很好的多维数组操作工具类。这篇文章是一个很好的教程文档。
+
+
 
 # Tip
 

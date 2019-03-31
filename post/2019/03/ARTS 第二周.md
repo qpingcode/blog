@@ -11,27 +11,7 @@ tags:
 
 # Algorithm
 
-[322. Coin Change](https://leetcode.com/problems/coin-change)：You are given coins of different denominations and a total amount of money *amount*. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return `-1`.
-
-**Example 1:**
-
-```
-Input: coins = [1, 2, 5], amount = 11
-Output: 3 
-Explanation: 11 = 5 + 5 + 1
-```
-
-**Example 2:**
-
-```
-Input: coins = [2], amount = 3
-Output: -1
-```
-
-**Note**:
-You may assume that you have an infinite number of each kind of coin.
-
-题目的意思是有不同面值的硬币，比如 1块、5块、10块，给一张整钱，比如100块，兑换成等额的零钱，且硬币数量最少。[最终代码实现点这里可以看到](https://github.com/qpingcode/leetcode-java/blob/master/src/main/java/me/qping/learning/CoinChage.java)。解题思路如下：
+[硬币兑换零钱](https://leetcode.com/problems/coin-change)：有不同面值的硬币，比如 1块、5块、10块，给一张整钱，比如100块，兑换成等额的零钱，且硬币数量最少。[最终代码实现点这里可以看到](https://github.com/qpingcode/leetcode-java/blob/master/src/main/java/me/qping/learning/CoinChage.java)。解题思路如下：
 
 ```
 思考：
@@ -59,8 +39,6 @@ You may assume that you have an infinite number of each kind of coin.
 
 6、如果当前计算的 output 大于之前计算的 output，可以终止循环，节省时间
 ```
-
-
 
 
 
@@ -141,15 +119,11 @@ import('./mathlib').then(mathlib => {
 
 
 
-
-
 # Tip
 
 当事情很多时，不要焦虑，来一件事就做掉，来一件事就做掉。忙只是一件事接一件事。
 
 from: 陈果
-
-
 
 
 
