@@ -31,7 +31,7 @@ Output: -1
 **Note**:
 You may assume that you have an infinite number of each kind of coin.
 
-题目的意思是有不同面值的硬币，比如 1块、5块、10块，给一张整钱，比如100块，兑换成等额的零钱，且硬币数量最少。
+题目的意思是有不同面值的硬币，比如 1块、5块、10块，给一张整钱，比如100块，兑换成等额的零钱，且硬币数量最少。[最终代码实现点这里可以看到](https://github.com/qpingcode/leetcode-java/blob/master/src/main/java/me/qping/learning/CoinChage.java)。解题思路如下：
 
 ```
 思考：
@@ -59,8 +59,6 @@ You may assume that you have an infinite number of each kind of coin.
 
 6、如果当前计算的 output 大于之前计算的 output，可以终止循环，节省时间
 ```
-
-最终代码实现：<https://github.com/qpingcode/leetcode-java/blob/master/src/main/java/me/qping/learning/CoinChage.java>
 
 
 
@@ -117,11 +115,33 @@ const mathlib = require('./mathlib')
 
 ### ES6，Babel 和 Webpack
 
-ES6规范包括JavaScript原生的模块系统，通常称为ECMAScript模块
+ES6规范包括 JavaScript 原生的模块系统，通常称为 ESM ( ECMAScript Modules ). ESM 很大程度上受 CommonJS 的影响，提供一个静态声明 API 和一个基于 promise 的动态编程 API.
+
+``` javascript
+// static declarative API 
+import mathlib from './mathlib'
+
+// a promise-based dynamic programmative API
+import('./mathlib').then(mathlib => {
+  // …
+})
+```
+
+在 ESM 中每个文件都是具有自己的范围和上下文的模块。ESM 相对于 CommonJS 的优势在于支持静态引入模块。大家都知道 `import` 必须要写在文件的顶层，这也就是为了能够静态分析你需要加载的模块。
+
+首先他能很好的解决循环依赖的问题。
+
+其次是异步加载。在 CommonJS 中，JS 的加载是同步进行的，也就是说我必须要等待上一个 JS 加载完成，才能够加载下一个 JS，这也就会导致如果 JS 文件过多，系统的启动时间会被大大加长。而在 ESM 中， JS 引擎对脚本静态分析的时候，遇到模块加载命令`import`，就会生成一个只读引用。等到脚本真正执行时，再根据这个只读引用，到被加载的那个模块里面去取值。
+
+具体可以参考阮一峰老师的教程，有详细说明：<http://es6.ruanyifeng.com/#docs/module-loader>
 
 
 
 # Tip
+
+当事情很多时，不要焦虑，来一件事就做掉，来一件事就做掉。忙只是一件事接一件事。
+
+from: 陈果
 
 
 
