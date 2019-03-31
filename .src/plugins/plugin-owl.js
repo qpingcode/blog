@@ -37,9 +37,7 @@
 			console.log(owlBody.offsetTop, owlBody.offsetLeft)
 
 			document.addEventListener ('mousemove', function mouseMove(event){
-				var x1 = event.clientX;
-				var y1 = event.clientY;
-				mouse = [x1, y1]
+				mouse =  returngetMousePos(event)
 			}, false);
 
 			// 50毫秒刷新一次眼睛的位置，解决卡顿
@@ -77,6 +75,16 @@
 
 				return [x4, y4]
 			}
+
+			function getMousePos(event) {
+	            var e = event || window.event;
+	            var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft;
+	            var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
+	            var x = e.pageX || e.clientX + scrollX;
+	            var y = e.pageY || e.clientY + scrollY;
+	            //alert('x: ' + x + '\ny: ' + y);
+	            return [x, y];
+	        }
 
 		}
 	})
