@@ -26,13 +26,7 @@
 			var r1 = 14; 	// 眼眶半径 / 2
 			var r2 = 14;	// 眼睛半径
 
-			var offset = getOffset(owlBody)
-
-			var left_x0 = offset.left + 96;
-			var left_y0 = offset.top + 96;
-
-			var right_x0 = offset.left + 168;
-			var right_y0 = offset.top + 96;
+			
 
 			var mouse = [0, 0]
 			
@@ -48,6 +42,14 @@
 			}, 50)
 
 			function changeEyePostion(x1, y1){
+				var offset = getOffset(owlBody)
+
+				var left_x0 = offset.left + 96;
+				var left_y0 = offset.top + 96;
+
+				var right_x0 = offset.left + 168;
+				var right_y0 = offset.top + 96;
+				
 				var left = getPostion(x1, y1, left_x0, left_y0, r1);
 				var right = getPostion(x1, y1, right_x0, right_y0, r1);
 
