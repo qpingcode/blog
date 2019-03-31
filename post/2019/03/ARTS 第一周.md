@@ -1,5 +1,6 @@
 ---
-title: ARTS first week
+ 比如 coins = [1, 2, 5] amount = 14
+         *    可以得出： 14 除以 5 余 4，剩下的 yuantitle: ARTS first week
 modify: 2019-03-17 19:30:00
 tags:
  - ARTS
@@ -16,7 +17,7 @@ tags:
 
 # Algorithm
 
-[原题](https://leetcode.com/problems/product-of-array-except-self)：Given an array nums of n integers where n > 1,  return an array output such that output[i] is equal to the product of all the elements of nums except nums[i]
+[238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)：Given an array nums of n integers where n > 1,  return an array output such that output[i] is equal to the product of all the elements of nums except nums[i]
 
 **Example:**
 
