@@ -62,7 +62,62 @@ You may assume that you have an infinite number of each kind of coin.
 
 最终代码实现：<https://github.com/qpingcode/leetcode-java/blob/master/src/main/java/me/qping/learning/CoinChage.java>
 
-# Review
+
+
+# [Review: js模块化演进历史](https://ponyfoo.com/articles/brief-history-of-modularity)
+
+### 闭包
+
+最早的 javascript 都是使用 `<script>` 标签内嵌到 html 中，所有的脚本文件都共享一个全局范围。任何脚本定义的变量都可以绑定在window上，导致冲突和依赖问题。为了解决这个问题，引入了立即调用函数表达式  IIFE  ( Immediately-invoking function expressions  ) 。如下
+
+``` javascript
+(function() {
+  console.log('IIFE using parenthesis')
+})()
+
+~function() {
+  console.log('IIFE using a bitwise operator')
+}()
+
+void function() {
+  console.log('IIFE using the void operator')
+}()
+```
+
+ IIFE 将变量范围限制在闭包内部，永远不会成为隐式的全局变量，很好的解决了冲突问题。IIFE 也有依赖树的问题，开发人员按精确的顺序引入脚本，一个脚本依赖的模块，必须在它们之前加载。
+
+### RequireJS，AngularJS 和依赖注入
+
+RequireJs 依赖注入的出现很好的解决了依赖树的问题，我们可以明确地命名每个模块的依赖关系。
+
+``` javascript
+define(['mathlib/sum'], function(sum) {
+  return { sum }
+})
+
+require(['mathlib'], function(mathlib) {
+  mathlib.sum(1, 2, 3)
+  // <- 6
+})
+```
+
+RequireJS 的问题在于执行业务代码之前，需要像瀑布一样发出几百个网络请求，异步加载依赖的模块。
+
+### Node.js 和 CommonJS 的出现
+
+Node.js 的众多创新之一是 CommonJS ，CommonJS标准更符合传统的模块加载机制。在 CommonJS 中，每个文件都是一个具有自己的范围和上下文的模块。使用 `require` 可以在模块生命周期中的任何时间动态调用的同步函数来加载依赖项，如下所示。
+
+```javascript
+const mathlib = require('./mathlib')
+```
+
+与 RequireJS 和 AngularJS 非常相似，CommonJS 依赖关系也由路径名引用。主要区别在于模版函数和依赖关系数组现在都已消失，并且模块的接口可以分配给变量绑定，或者可以在任何可以使用JavaScript表达式的地方使用。
+
+在 RequireJS 和 AngularJS 中，每个文件可以有许多动态定义的模块，而 CommonJS 在文件和模块之间有一对一的映射。同时，RequireJS 和 AngularJS 有几种声明模块的方法，而 CommonJS 只有一种声明模块的方式。任何JavaScript文件都是一个模块，调用 `require` 会加载依赖项，分配给 `module.exports` 它的任何东西都是它的接口。
+
+### ES6，Babel 和 Webpack
+
+ES6规范包括JavaScript原生的模块系统，通常称为ECMAScript模块
 
 
 
