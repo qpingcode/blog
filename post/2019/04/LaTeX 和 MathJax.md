@@ -149,12 +149,6 @@ $$\left( \frac{1}{x+y} \right)$$
 
 # 矩阵
 
-$$12 \\\\ 23$$
-
-
-
-$$\begin{matrix}1 & 3 &4\end{matrix}​$$ 
-
 对于少于 10 列的矩阵，可使用 matrix，pmatrix，bmatrix，Bmatrix，vmatrix 和 Vmatrix 等环境。
 
 ```
@@ -168,12 +162,12 @@ $\begin{Vmatrix}1 & 2 \\ 3 &4\end{Vmatrix}$
 
 效果：
 $$
-\begin{matrix}1 & 2 \\ 3 & 4\end{matrix}   \
-\begin{pmatrix}1 & 2 \\ 3 & 4\end{pmatrix} \
-\begin{bmatrix}1 & 2 \\ 3 & 4\end{bmatrix} \
-\begin{Bmatrix}1 & 2 \\ 3 & 4\end{Bmatrix} \
-\begin{vmatrix}1 & 2 \\ 3 & 4\end{vmatrix} \
-\begin{Vmatrix}1 & 2 \\ 3 & 4\end{Vmatrix} \
+\begin{matrix}1 & 2 \\\\ 3 & 4\end{matrix}   \
+\begin{pmatrix}1 & 2 \\\\ 3 & 4\end{pmatrix} \
+\begin{bmatrix}1 & 2 \\\\ 3 & 4\end{bmatrix} \
+\begin{Bmatrix}1 & 2 \\\\ 3 & 4\end{Bmatrix} \
+\begin{vmatrix}1 & 2 \\\\ 3 & 4\end{vmatrix} \
+\begin{Vmatrix}1 & 2 \\\\ 3 & 4\end{Vmatrix} \
 $$
 
 
@@ -206,9 +200,9 @@ $$
 $$
 \mathbf{X} =
 \left( \begin{array}{cccr}
-x_{11} & x_{12} & \ldots & x_{1n}\\
-x_{21} & x_{22} & \ldots & x_{2n}\\
-\vdots & \vdots & \ddots &			 \\
+x_{11} & x_{12} & \ldots & x_{1n}\\\\
+x_{21} & x_{22} & \ldots & x_{2n}\\\\
+\vdots & \vdots & \ddots &			 \\\\
 x_{n1} & x_{n2} & 			 & x_{nn}
 \end{array} \right)
 \tag{公式1}
@@ -232,13 +226,13 @@ $$
 
 $$
 \left(\begin{array}{c|c}
-1 & 2 \\
+1 & 2 \\\\
 \hline
 3 & 4
 \end{array}\right)
 
 \left(\begin{array}{cc|c}
-1 & 2 & 3 \\
+1 & 2 & 3 \\\\
 4 & 5 & 6
 \end{array}\right)
 $$
