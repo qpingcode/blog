@@ -77,8 +77,7 @@
     <script type="text/javascript" src="/js/plugin-manager.js"></script>
     <script type="text/javascript" src="/theme/default/theme.js"></script>
     <!-- mathjax begin -->
-    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 	<script type="text/x-mathjax-config">
 	  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 	</script>
