@@ -149,31 +149,31 @@ $$\left( \frac{1}{x+y} \right)$$
 
 # 矩阵
 
-$$12 \\ 23$$
+$$12 \\\\ 23$$
 
 
 
-$$\begin{matrix}1 & 3 &4\end{matrix}$$ 
+$$\begin{matrix}1 & 3 &4\end{matrix}​$$ 
 
 对于少于 10 列的矩阵，可使用 matrix，pmatrix，bmatrix，Bmatrix，vmatrix 和 Vmatrix 等环境。
 
 ```
-$\begin{matrix}1 & 2\\3 &4\end{matrix}$
-$\begin{pmatrix}1 & 2\\3 &4\end{pmatrix}$
-$\begin{bmatrix}1 & 2\\3 &4\end{bmatrix}$
-$\begin{Bmatrix}1 & 2\\3 &4\end{Bmatrix}$
-$\begin{vmatrix}1 & 2\\3 &4\end{vmatrix}$
-$\begin{Vmatrix}1 & 2\\3 &4\end{Vmatrix}$
+$\begin{matrix}1 & 2 \\ 3 &4\end{matrix}$
+$\begin{pmatrix}1 & 2 \\ 3 &4\end{pmatrix}$
+$\begin{bmatrix}1 & 2 \\ 3 &4\end{bmatrix}$
+$\begin{Bmatrix}1 & 2 \\ 3 &4\end{Bmatrix}$
+$\begin{vmatrix}1 & 2 \\ 3 &4\end{vmatrix}$
+$\begin{Vmatrix}1 & 2 \\ 3 &4\end{Vmatrix}$
 ```
 
 效果：
 $$
-\begin{matrix}1 & 2\\3 & 4\end{matrix}   \
-\begin{pmatrix}1 & 2\\3 & 4\end{pmatrix} \
-\begin{bmatrix}1 & 2\\3 & 4\end{bmatrix} \
-\begin{Bmatrix}1 & 2\\3 & 4\end{Bmatrix} \
-\begin{vmatrix}1 & 2\\3 & 4\end{vmatrix} \
-\begin{Vmatrix}1 & 2\\3 & 4\end{Vmatrix} \
+\begin{matrix}1 & 2 \\ 3 & 4\end{matrix}   \
+\begin{pmatrix}1 & 2 \\ 3 & 4\end{pmatrix} \
+\begin{bmatrix}1 & 2 \\ 3 & 4\end{bmatrix} \
+\begin{Bmatrix}1 & 2 \\ 3 & 4\end{Bmatrix} \
+\begin{vmatrix}1 & 2 \\ 3 & 4\end{vmatrix} \
+\begin{Vmatrix}1 & 2 \\ 3 & 4\end{Vmatrix} \
 $$
 
 
