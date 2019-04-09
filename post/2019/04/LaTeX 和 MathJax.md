@@ -149,6 +149,12 @@ $$\left( \frac{1}{x+y} \right)$$
 
 # 矩阵
 
+$$12 \\ 23$$
+
+
+
+$$\begin{matrix}1 & 3 &4\end{matrix}$$ 
+
 对于少于 10 列的矩阵，可使用 matrix，pmatrix，bmatrix，Bmatrix，vmatrix 和 Vmatrix 等环境。
 
 ```
