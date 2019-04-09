@@ -76,6 +76,13 @@
 	<script type="text/javascript" src="/js/template.latest.js"></script>
     <script type="text/javascript" src="/js/plugin-manager.js"></script>
     <script type="text/javascript" src="/theme/default/theme.js"></script>
+    <!-- mathjax begin -->
+    <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+    <!-- mathjax end -->
 
     <!-- highlight begin -->
     <link rel="stylesheet" type="text/css" href="/js/highlight/styles/railscasts.css">
