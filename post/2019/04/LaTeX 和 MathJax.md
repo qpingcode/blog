@@ -225,16 +225,16 @@ $$
 ```
 
 $$
-\left( \begin{array}{c|c}
+\left ( \begin{array}{c|c}
 1 & 2 \\\\
 \hline
 3 & 4
-\end{array} \right)
+\end{array} \right )
 
-\left( \begin{array}{cc|c}
+\left ( \begin{array}{cc|c}
 1 & 2 & 3 \\\\
 4 & 5 & 6
-\end{array} \right)
+\end{array} \right )
 $$
 
 
