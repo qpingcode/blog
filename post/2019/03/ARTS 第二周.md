@@ -1,5 +1,5 @@
 ---
-title: ARTS 2
+title: ARTS 2 bref history of modularity
 modify: 2019-03-31 19:49:00
 tags:
  - ARTS
@@ -11,34 +11,9 @@ tags:
 
 # Algorithm
 
-[硬币兑换零钱](https://leetcode.com/problems/coin-change)：有不同面值的硬币，比如 1块、5块、10块，给一张整钱，比如100块，兑换成等额的零钱，且硬币数量最少。[最终代码实现点这里可以看到](https://github.com/qpingcode/leetcode-java/blob/master/src/main/java/me/qping/learning/CoinChage.java)。解题思路如下：
+[硬币兑换零钱](https://leetcode.com/problems/coin-change)：有不同面值的硬币，比如 1块、5块、10块，给一张整钱，比如100块，兑换成等额的零钱，且硬币数量最少。
 
-```
-思考：
-1、类似于数学问题
-函数： a1 * m1 + a2 * m2 + ...... + an * mn = amount
-给定 m1、m2、....、mn 和 amount
-求 a1 + a2 + .... + an 的最小值
-
-2、优先使用面值大的硬币，output才会是最小
-比如 coins = [1, 2, 5]  amount = 15
-可以得出： (3) * 5 = 15 ==> output = 3
-
-3、如果面值大的硬币不能凑整，则使用面值小的
-比如 coins = [1, 2, 5] amount = 14
-可以得出： (2) * 5 + (2) * 2 ==> output = 4
-
-4、如果优先使用面值大的硬币后，剩下的无法凑成amount的问题，则 面值大的硬币数 -1 继续运算。
-比如 coins = [3, 13, 14] amount = 30
-可以得出： 30 除以 14 等于 2 余 2，无法凑整
-可以使用： (1) * 14 + (1) * 13 + (1) * 3 ==> output = 3
-
-5、如果硬币面值相差过于接近，比如 coins = [15,14,1]  amount=  28 ，
-结果为 (1) * 15 + (13) * 1，期望结果应该是 (2) * 14，
-为解决这个问题，需要遍历所有的情况才能得出最终结果
-
-6、如果当前计算的 output 大于之前计算的 output，可以终止循环，节省时间
-```
+[最终代码实现点这里可以看到](https://github.com/qpingcode/leetcode-java/blob/master/src/main/java/me/qping/learning/CoinChage.java)。
 
 
 
