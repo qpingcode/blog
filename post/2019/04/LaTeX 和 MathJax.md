@@ -212,31 +212,19 @@ $$
 你也可以在array 环境中画线，如分隔矩阵中元素。
 
 ```
-\left( \begin{array}{c|c}
-1 & 2 \\
-\hline
-3 & 4
-\end{array} \right)
-
 \left( \begin{array}{cc|c}
 1 & 2 & 3 \\
 4 & 5 & 6
 \end{array} \right)
 ```
 
-$$
-\left ( \begin{array}{c|c}
-1 & 2 \\\\
-\hline
-3 & 4
-\end{array} \right )
 
+$$
 \left ( \begin{array}{cc|c}
 1 & 2 & 3 \\\\
 4 & 5 & 6
 \end{array} \right )
 $$
-
 
 
 # 不带上下限的数学算子

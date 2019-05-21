@@ -38,6 +38,30 @@
                                 <p>
                                     <plugin name="plugin-activity"></plugin>
                                 </p>
+
+                                <p>$$
+                                	\left( \begin{array}{c|c}<br/>1 &amp; 2 \\<br/>\hline<br/>3 &amp; 4<br/>\end{array} \right)
+                                	$$
+                                </p>
+								<p>\left ( \begin{array}{cc|c}<br/>1 &amp; 2 &amp; 3 \\<br/>4 &amp; 5 &amp; 6<br/>\end{array} \right )
+
+									$$
+								</p>
+
+								<p>$\left ( \frac {a^2}b \right )$</p>
+
+								<p>
+									
+
+									$$
+\left[  \begin{array}  {c c | c} %这里的c表示数组中元素对其方式：c居中、r右对齐、l左对齐，竖线表示2、3列间插入竖线
+1 & 2 & 3 \\
+\hline %插入横线，如果去掉\hline就是增广矩阵
+4 & 5 & 6
+\end{array}  \right]
+$$
+								</p>
+
 							</div>
 						</article>
 					</div>
@@ -68,6 +92,13 @@
 		</div>
 		
 	</body>
+
+	 <!-- mathjax begin -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});
+	</script>
+    <!-- mathjax end -->
 
 	<script type="text/javascript" src="/js/hammer.js"></script>
 	<script type="text/javascript" src="/js/template.latest.js"></script>
