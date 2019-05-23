@@ -6,7 +6,7 @@
 (function(hammer){
 
     function each(data, callback){
-        for (let i = 0, len = data.length; i < len; i++) {
+        for (var i = 0, len = data.length; i < len; i++) {
             callback(data[i], i);
         }
     };
@@ -33,7 +33,7 @@
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4) {
                 if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304) {
-                    let responseText = xhr.responseText
+                    var responseText = xhr.responseText
                     if(dataType == 'json'){
                         responseText = eval("(" + responseText + ")")
                     }
