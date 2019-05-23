@@ -319,15 +319,28 @@
         }
     }
 
-    hammer.prototype.addClass = function(className){
+    hammer.prototype.hasClass = function(ele, cls) {
+        return ele.getAttribute('class').indexOf(cls) > -1;
+    }
+
+    hammer.prototype.addClass = function(cls){
         hammer.each(this, function (ele) {
-            ele.classList.add(className);
+            if (ele.classList) {
+                ele.classList.add(cls);
+            } else if (!hammer.hasClass(ele, cls)) {
+                ele.setAttribute('class', ele.getAttribute('class') + ' ' + cls);
+            }
         })
     }
 
-    hammer.prototype.removeClass = function(className){
+    hammer.prototype.removeClass = function(cls){
         hammer.each(this, function (ele) {
-            ele.classList.remove(className);
+            if (ele.classList) {
+                ele.classList.remove(cls);
+            } else if (hammer.hasClass(ele, cls)) {
+                ele.setAttribute('class', ele.getAttribute('class').replace(cls, ' '));
+            }
+
         })
     }
 
