@@ -75,7 +75,7 @@ function PluginManager(){
     }
 
     function $each(data, callback){
-        for (let i = 0, len = data.length; i < len; i++) {
+        for (var i = 0, len = data.length; i < len; i++) {
             callback(data[i], i);
         }
     }
