@@ -329,20 +329,22 @@
     }
 
     hammer.prototype.addClass = function(cls){
+        var that = this;
         hammer.each(this, function (ele) {
             if (ele.classList) {
                 ele.classList.add(cls);
-            } else if (!hammer.hasClass(ele, cls)) {
+            } else if (!that.hasClass(ele, cls)) {
                 ele.setAttribute('class', ele.getAttribute('class') + ' ' + cls);
             }
         })
     }
 
     hammer.prototype.removeClass = function(cls){
+        var that = this;
         hammer.each(this, function (ele) {
             if (ele.classList) {
                 ele.classList.remove(cls);
-            } else if (hammer.hasClass(ele, cls)) {
+            } else if (that.hasClass(ele, cls)) {
                 ele.setAttribute('class', ele.getAttribute('class').replace(cls, ' '));
             }
 
