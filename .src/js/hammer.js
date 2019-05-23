@@ -320,14 +320,19 @@
     }
 
     hammer.prototype.hasClass = function(ele, cls) {
-        return ele.getAttribute('class').indexOf(cls) > -1;
+        if(ele && ele.getAttribute('class')){
+            return ele.getAttribute('class').indexOf(cls) > -1;
+        }else{
+            return false;
+        }
+        
     }
 
     hammer.prototype.addClass = function(cls){
         hammer.each(this, function (ele) {
             if (ele.classList) {
                 ele.classList.add(cls);
-            } else if (!ele.getAttribute('class').indexOf(cls) > -1) {
+            } else if (!hammer.hasClass(ele, cls)) {
                 ele.setAttribute('class', ele.getAttribute('class') + ' ' + cls);
             }
         })
@@ -337,7 +342,7 @@
         hammer.each(this, function (ele) {
             if (ele.classList) {
                 ele.classList.remove(cls);
-            } else if (ele.getAttribute('class').indexOf(cls) > -1) {
+            } else if (hammer.hasClass(ele, cls)) {
                 ele.setAttribute('class', ele.getAttribute('class').replace(cls, ' '));
             }
 
