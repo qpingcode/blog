@@ -73,6 +73,7 @@
 		</div>
 	</body>
 
+	<script type="text/javascript" src="/js/es6-promise.auto.min.js"></script>
     <script type="text/javascript" src="/js/hammer.js"></script>
 	<script type="text/javascript" src="/js/template.latest.js"></script>
     <script type="text/javascript" src="/js/plugin-manager.js"></script>
