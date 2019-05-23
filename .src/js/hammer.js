@@ -327,7 +327,7 @@
         hammer.each(this, function (ele) {
             if (ele.classList) {
                 ele.classList.add(cls);
-            } else if (!hammer.hasClass(ele, cls)) {
+            } else if (!ele.getAttribute('class').indexOf(cls) > -1) {
                 ele.setAttribute('class', ele.getAttribute('class') + ' ' + cls);
             }
         })
@@ -337,7 +337,7 @@
         hammer.each(this, function (ele) {
             if (ele.classList) {
                 ele.classList.remove(cls);
-            } else if (hammer.hasClass(ele, cls)) {
+            } else if (ele.getAttribute('class').indexOf(cls) > -1) {
                 ele.setAttribute('class', ele.getAttribute('class').replace(cls, ' '));
             }
 
