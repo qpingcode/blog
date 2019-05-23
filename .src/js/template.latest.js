@@ -139,7 +139,7 @@
 
         var codes = [];
         // 增加上下文信息
-        for (let key in $context) {
+        for (var key in $context) {
             codes.push("var " + key + " = $context." + key)
         }
         // var $data = data;
@@ -188,7 +188,7 @@
 
     function importData(data, codes){
         if(data && !Array.isArray(data)){
-            for (let key in data) {
+            for (var key in data) {
                 codes.push("var " + key + " = $data." + key)
             }
         }
@@ -196,11 +196,11 @@
 
     function $each(data, callback){
         if (Array.isArray(data)) {
-            for (let i = 0, len = data.length; i < len; i++) {
+            for (var i = 0, len = data.length; i < len; i++) {
                 callback(data[i], i);
             }
         } else {
-            for (let i in data) {
+            for (var i in data) {
                 callback(data[i], i);
             }
         }
