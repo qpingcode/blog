@@ -89,8 +89,7 @@
 			</div>
 			<div class="blog-meta">
 				<span class="time">
-					Date 
-					<span class="info"> {{blog.modify? blog.modify.substring(0,10): "前些时候"}} </span>
+					{{blog.modify? blog.modify.substring(0,10): "前些时候"}} 
 				</span>
 				
                 <span class="tag">
