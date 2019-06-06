@@ -16,14 +16,6 @@ body{
     color:#222;
 }
 
-p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
 a{
 	text-decoration: none;
     color:#000;
@@ -129,6 +121,7 @@ article .blog-meta .info a{
 article .blog-content{
   font-size:15px;
   line-height:22.5px;
+  margin-top:1em;
 }
 
 .footer{
