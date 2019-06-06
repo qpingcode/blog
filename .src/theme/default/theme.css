@@ -99,7 +99,7 @@ article:last-child{
 
 article .blog-title a{
 	color:#555;
-	font-size:26px;
+	font-size:23px;
   font-weight: 700;
 }
 
@@ -118,6 +118,7 @@ article .blog-meta .info{
 }
 
 article .blog-content{
+  font-size:15px;
   line-height:22.5px;
 }
 
