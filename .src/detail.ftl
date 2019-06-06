@@ -37,7 +37,7 @@
 								
 		                        <span class="tag">
 		                        	<i class="iconfont icon-tags"></i> 
-		                        	<span class="info"> <#list blog.tags as item>${item} </#list></span>
+		                        	<span class="info"> <#list blog.tags as item><a ref="${item}">${item}</a> </#list></span>
 		                        </span>
 		                    </div>
                             </#if>

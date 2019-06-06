@@ -113,12 +113,9 @@ article .blog-meta .tag{
     margin-left: 10px;
 }
 
-article .blog-meta .info{
-    border-bottom: 1px dotted #ccc;
-}
-
 article .blog-meta .info a{
     color: #222;
+    border-bottom: 1px dotted #ccc;
 }
 
 article .blog-content{
