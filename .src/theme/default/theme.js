@@ -1,36 +1,30 @@
 (function(){
 	// 切换样式
-	var currentColor = $.getCookie("color");
+	var currentColor = $.getCookie("color") ? $.getCookie("color") : "dark";
 	console.log("[theme info] name:default, color:" + currentColor)
 
-	function loadDark(){
-		var link = document.createElement('link');
-	    link.type = 'text/css';
-	    link.id = "theme-css-dark";
-	    link.rel = 'stylesheet';
-	    link.href = '/theme/default/dark.css';
-	    document.getElementsByTagName("head")[0].appendChild(link);
-	    currentColor = "dark";
-		$.setCookie("color", currentColor, {path:"/"});
-	}
-
-	function loadWhite(){
-        $('#theme-css-dark').remove();
-        currentColor = "";
-        $.setCookie("color", currentColor, {path:"/"});
-	}
-
-	if(currentColor == 'dark'){
-        loadDark();
+	if(currentColor == 'white'){
+        loadColor('white');
 	}
 
 	$("#lightBtn").on("click", function(){
-		if(currentColor == ""){
-            loadDark();
-		}else{
-			loadWhite();
-		}
+		loadColor(currentColor == "dark" ? "white" : "dark")
 	})
+
+	function loadColor(color){
+		if(color == "dark"){
+            var link = document.createElement('link');
+		    link.type = 'text/css';
+		    link.id = "theme-css-dark";
+		    link.rel = 'stylesheet';
+		    link.href = '/theme/default/dark.css';
+		    document.getElementsByTagName("head")[0].appendChild(link);
+		}else{
+			$('#theme-css-dark').remove();
+		}
+		currentColor = color;
+		$.setCookie("color", currentColor, {path:"/"});
+	}
 
 	// 回到顶部
 	function smoothscroll(){
