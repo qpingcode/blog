@@ -38,6 +38,11 @@ article .blog-meta{
     color: #888;
 }
 
+article .blog-meta .info a{
+    color: #fff;
+    border-bottom: 1px dotted #555;
+}
+
 
 .main .middle{
 	background-color: #363636;
