@@ -30,9 +30,14 @@
 								<a href="javascript:void(0)"> ${blog.titleCn} </a>
 							</div>
 							<div class="blog-meta">
-								<i class="iconfont icon-time-circle"></i> ${blog.modify}
-		                        <span>
-		                        	<i class="iconfont icon-tags"></i> <#list blog.tags as item>${item} </#list>
+								<span class="time">
+                 					<i class="iconfont icon-time-circle"></i> 
+                 					<span class="info"> ${blog.modify}</span>
+                				</span>
+								
+		                        <span class="tag">
+		                        	<i class="iconfont icon-tags"></i> 
+		                        	<span class="info"> <#list blog.tags as item>${item} </#list></span>
 		                        </span>
 		                    </div>
                             </#if>

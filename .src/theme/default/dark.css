@@ -34,6 +34,11 @@ article .blog-title a{
 	color:white;
 }
 
+article .blog-meta{
+    color: #888;
+}
+
+
 .main .middle{
 	background-color: #363636;
     box-shadow: none;

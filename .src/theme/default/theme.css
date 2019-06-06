@@ -105,11 +105,15 @@ article .blog-title a{
 article .blog-meta{
     font-size: 14px;
     margin: 5px 0;
-    color: #888;
+    color: #f47e00;
 }
 
-article .blog-meta span{
+article .blog-meta .tag{
     margin-left: 10px;
+}
+
+article .blog-meta .info{
+    border-bottom: 1px dotted #ccc;
 }
 
 .footer{

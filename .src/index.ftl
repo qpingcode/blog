@@ -88,9 +88,14 @@
 				<a href="{{blog.path}}{{blog.key}}.html" target="_blank"> {{blog.titleCn}}</a>
 			</div>
 			<div class="blog-meta">
-				<i class="iconfont icon-time-circle"></i> {{blog.modify? blog.modify.substring(0,10): "前些时候"}}
-                <span>
-                	<i class="iconfont icon-tags"></i> {{blog.tags.join(", ")}}
+				<span class="time">
+					<i class="iconfont icon-time-circle"></i> 
+					<span class="info"> {{blog.modify? blog.modify.substring(0,10): "前些时候"}} </span>
+				</span>
+				
+                <span class="tag">
+                	<i class="iconfont icon-tags"></i> 
+                	<span class="info">{{blog.tags.join(", ")}}</span>
                 </span>
             </div>
 			<div class="blog-content">
