@@ -89,12 +89,12 @@
 			</div>
 			<div class="blog-meta">
 				<span class="time">
-					<i class="iconfont icon-time-circle"></i> 
+					Date 
 					<span class="info"> {{blog.modify? blog.modify.substring(0,10): "前些时候"}} </span>
 				</span>
 				
                 <span class="tag">
-                	<i class="iconfont icon-tags"></i> 
+                	Tags 
                 	<span class="info">{{blog.tags.join(", ")}}</span>
                 </span>
             </div>
