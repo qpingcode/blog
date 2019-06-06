@@ -227,8 +227,8 @@ kubectl get service
 如果修改  svc-xxx.yml 配置，重新apply
 
 ```
-port是k8s使用的端口
-targetPort是内部服务端口
+port : 是pod使用的端口
+targetPort : 是容器内服务使用端口
 nodePort是对外服务端口
 ```
 
