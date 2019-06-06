@@ -25,10 +25,10 @@
 	}
 
 	$("#lightBtn").on("click", function(){
-		if(currentColor == "dark"){
-            loadWhite();
+		if(currentColor == ""){
+            loadDark();
 		}else{
-			loadDark();
+			loadWhite();
 		}
 	})
 

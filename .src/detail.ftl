@@ -12,6 +12,7 @@
         <link rel="icon" href="/img/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="/theme/default/icon/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="/theme/default/theme.css">
+		<link id="theme-css-dark" rel="stylesheet" type="text/css" href="/theme/default/dark.css">
 		<link rel="stylesheet" type="text/css" href="/css/markdown.css">
 	</head>
 	<body>
