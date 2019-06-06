@@ -14,7 +14,6 @@
 		<link rel="stylesheet" type="text/css" href="/theme/default/theme.css">
 		<link id="theme-css-dark" rel="stylesheet" type="text/css" href="/theme/default/dark.css">
 		<link rel="stylesheet" type="text/css" href="/css/markdown.css">
-		<link rel="stylesheet" type="text/css" href="/css/loading.css">
 	</head>
 	<body>
 		<div class="container">
@@ -98,7 +97,6 @@
 	<script type="text/javascript" src="/js/es6-promise.auto.min.js"></script>
     <script type="text/javascript" src="/js/hammer.js"></script>
 	<script type="text/javascript" src="/js/template.latest.js"></script>
-	<script type="text/javascript" src="/js/blog/detail.js"></script>
     <script type="text/javascript" src="/js/plugin-manager.js"></script>
     <script type="text/javascript" src="/theme/default/theme.js"></script>
     <!-- mathjax begin -->
