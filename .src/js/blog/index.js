@@ -28,6 +28,9 @@
                 }else{
                     alert(result.msg)
                 }
+            },
+            error:function(){
+                closeLoading();
             }
         })
     }

@@ -12,7 +12,9 @@
         <link rel="icon" href="/img/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="/theme/default/icon/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="/theme/default/theme.css">
+		<link id="theme-css-dark" rel="stylesheet" type="text/css" href="/theme/default/dark.css">
 		<link rel="stylesheet" type="text/css" href="/css/markdown.css">
+		<link rel="stylesheet" type="text/css" href="/css/loading.css">
 	</head>
 	<body>
 		<div class="container">
@@ -76,11 +78,27 @@
 				</li>
 			</ul>
 		</div>
+
+		<div id="loading-full" class="loading-full">
+			 <div class="loader">
+			 	<ul class="hexagon-container">
+			 	 	<li class="hexagon hex_1"></li>
+			 	 	<li class="hexagon hex_2"></li>
+			 	 	<li class="hexagon hex_3"></li>
+			 	 	<li class="hexagon hex_4"></li>
+			 	 	<li class="hexagon hex_5"></li>
+			 	 	<li class="hexagon hex_6"></li>
+			 	 	<li class="hexagon hex_7"></li>
+			 	</ul>
+			</div>
+		</div>
+
 	</body>
 
 	<script type="text/javascript" src="/js/es6-promise.auto.min.js"></script>
     <script type="text/javascript" src="/js/hammer.js"></script>
 	<script type="text/javascript" src="/js/template.latest.js"></script>
+	<script type="text/javascript" src="/js/blog/detail.js"></script>
     <script type="text/javascript" src="/js/plugin-manager.js"></script>
     <script type="text/javascript" src="/theme/default/theme.js"></script>
     <!-- mathjax begin -->
