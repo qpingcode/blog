@@ -88,14 +88,19 @@
 				<a href="{{blog.path}}{{blog.key}}.html" target="_blank"> {{blog.titleCn}}</a>
 			</div>
 			<div class="blog-meta">
-				<span class="time">
+                <span class="tag">
+                	Tags:
+                	<span class="info">
+                		{{each tag in blog.tags}}
+                			<a ref="{{tag}}">{{tag}}</a>
+                		{{/each}}
+                	</span>
+                </span>
+
+                <span class="time">
 					{{blog.modify? blog.modify.substring(0,10): "前些时候"}} 
 				</span>
 				
-                <span class="tag">
-                	Tags 
-                	<span class="info">{{blog.tags.join(", ")}}</span>
-                </span>
             </div>
 			<div class="blog-content">
 				{{blog.summary}}

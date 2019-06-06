@@ -117,6 +117,10 @@ article .blog-meta .info{
     border-bottom: 1px dotted #ccc;
 }
 
+article .blog-meta .info a{
+    color: #222;
+}
+
 article .blog-content{
   font-size:15px;
   line-height:22.5px;
