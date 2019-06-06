@@ -92,15 +92,16 @@
                 	Tags:
                 	<span class="info">
                 		{{each tag in blog.tags}}
-                			<a ref="{{tag}}">{{tag}}</a>
+                			<a ref="{{tag}}">{{tag}}</a> 
                 		{{/each}}
                 	</span>
                 </span>
 
                 <span class="time">
+                	Time: 
 					{{blog.modify? blog.modify.substring(0,10): "前些时候"}} 
 				</span>
-				
+
             </div>
 			<div class="blog-content">
 				{{blog.summary}}

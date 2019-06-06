@@ -30,15 +30,15 @@
 								<a href="javascript:void(0)"> ${blog.titleCn} </a>
 							</div>
 							<div class="blog-meta">
-								<span class="time">
-                 					<i class="iconfont icon-time-circle"></i> 
-                 					<span class="info"> ${blog.modify}</span>
-                				</span>
-								
-		                        <span class="tag">
-		                        	<i class="iconfont icon-tags"></i> 
+							    <span class="tag">
+		                        	Tags: 
 		                        	<span class="info"> <#list blog.tags as item><a ref="${item}">${item}</a> </#list></span>
 		                        </span>
+
+								<span class="time">
+                 					Time: 
+                 					<span class="info"> ${blog.modify}</span>
+                				</span>
 		                    </div>
                             </#if>
 
