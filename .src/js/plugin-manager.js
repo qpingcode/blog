@@ -89,9 +89,6 @@ function PluginManager(){
             var plugin_name = v.getAttribute("name");
             var domId = v.getAttribute("id");
 
-            debugger
-
-            
             pluginCenter.require(plugin_name).then(function(plugin_holder){
                 var plugin = plugin_holder[plugin_name];
                 if(!plugin) return;
