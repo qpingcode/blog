@@ -32,7 +32,7 @@
 							<div class="blog-meta">
 							    <span class="tag">
 		                        	Tags: 
-		                        	<span class="info"> <#list blog.tags as item><a ref="${item}">${item}</a> </#list></span>
+		                        	<span class="info"> <#list blog.tags as item><a ref="${item}">${item}</a>, </#list></span>
 		                        </span>
 
 								<span class="time">

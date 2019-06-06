@@ -91,9 +91,7 @@
                 <span class="tag">
                 	Tags:
                 	<span class="info">
-                		{{each tag in blog.tags}}
-                			<a ref="{{tag}}">{{tag}}</a> 
-                		{{/each}}
+                		{{each tag in blog.tags}}<a ref="{{tag}}">{{tag}}</a>, {{/each}}
                 	</span>
                 </span>
 
